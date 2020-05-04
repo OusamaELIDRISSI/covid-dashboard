@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ApiService } from './service/api.service';
+import { LastUpdateComponent } from './last-update/last-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    LastUpdateComponent
   ],
   imports: [
     BrowserModule,
