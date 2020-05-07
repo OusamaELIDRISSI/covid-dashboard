@@ -1,6 +1,15 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <div><a class="navbar-brand">
-                COVID-19 DASHBOARD</a></div>
-    </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div><a class="navbar-brand">
+        COVID-19 DASHBOARD</a></div>
+
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li class="nav-item">
+        <select class="browser-default custom-select" (change)="selectChangeHandler($event)">
+          <option value="en">en</option>
+          <option value="fr">fr</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
 </header>

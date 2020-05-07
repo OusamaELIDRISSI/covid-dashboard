@@ -1,13 +1,17 @@
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title">Statistics</h5>
+        <h5 class="card-title" translate>Statistics</h5>
         <!-- style="width: 150px;height: 30px;" -->
-        <select [(ngModel)]="status" (change)="updateChartType()"
-            class="mdb-select md-form colorful-select dropdown-primary">
-            <option value='confirmed'>Confirmed</option>
-            <option value='recovered'>Recovered</option>
-            <option value='deaths'>Deaths</option>
-        </select>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li class="nav-item">
+                <select class="browser-default custom-select" [(ngModel)]="status" (change)="updateChartType()"
+                    class="mdb-select md-form colorful-select dropdown-primary">
+                    <option value='confirmed'>{{ 'confirmed' | translate }}</option>
+                    <option value='recovered'>{{ 'recovered' | translate }}</option>
+                    <option value='deaths'>{{ 'deaths' | translate }}</option>
+                </select>
+            </li>
+        </ul>
         <div class="chart-wrapper">
             <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
                 [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"

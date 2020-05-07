@@ -23,7 +23,7 @@ export class StatisticsComponent implements OnInit {
   lineChartColors: Color[] = [
     {
       borderColor: 'black',
-      backgroundColor: 'rgba(255,255,0,0.28)',
+      backgroundColor: 'rgba(0, 123, 255, 0.83)',
     },
   ];
 
