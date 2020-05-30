@@ -1,6 +1,7 @@
 {
     "Title": "Track Corona",
     "LastUpdate": "Last update",
+    "AtTime": "at",
     "confirmed": "Confirmed",
     "recovered": "Recovered",
     "deaths": "Deaths",
