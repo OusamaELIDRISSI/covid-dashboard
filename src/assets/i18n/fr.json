@@ -1,6 +1,7 @@
 {
-    "Title": "Suivre Corona",
-    "LastUpdate": "Dernière mise à jour",
+    "Title": "Suivi Corona",
+    "LastUpdate": "Dernière mise à jour le",
+    "AtTime": "à",
     "confirmed": "Confirmé",
     "recovered": "Récupéré",
     "deaths": "Décès",

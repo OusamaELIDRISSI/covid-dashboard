@@ -1,5 +1,10 @@
 <h1 translate>Title</h1>
 <h2>
     {{ 'LastUpdate' | translate }}
-    <small class="text-muted">{{lastUpdate | date:'dd/MM/y, h:mm a z'}}</small>
+    <small class="text-muted">
+        {{lastUpdate | date:'dd/MM/y '}}
+        {{ 'AtTime' | translate }}
+        {{lastUpdate | date:'h:mm a z'}}
+    </small>
 </h2>
+
